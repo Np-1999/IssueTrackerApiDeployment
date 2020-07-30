@@ -1,0 +1,29 @@
+{
+  "name": "issue-tracker-api",
+  "version": "1.0.0",
+  "description": "Dedicated Api server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,graphql ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nikhil.padole1999@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.14.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "google-auth-library": "^6.0.5",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
