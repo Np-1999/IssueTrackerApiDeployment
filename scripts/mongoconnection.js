@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const url = 'mongodb://localhost/IssueTracker';
+const url = "mongodb+srv://root:nikhil123@cluster0.dchno.mongodb.net/IssueTracker";
 
 function testWithCallbacks(callback) {
   console.log('Testing with callbacks');

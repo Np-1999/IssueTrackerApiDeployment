@@ -3,7 +3,7 @@ require('dotenv').config({ path: 'sample.env' });
 
 let db;
 async function connectToDb() {
-  const url = process.env.DB_URL || 'mongodb://localhost/IssueTracker';
+  const url = process.env.DB_URL || 'mongodb+srv://root:nikhil123@cluster0.dchno.mongodb.net/IssueTracker';
   const client = new MongoClient(url, { useNewUrlParser: true });
   await client.connect();
   console.log('Connected to mongodb at ', url);
