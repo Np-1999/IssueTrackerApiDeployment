@@ -54,8 +54,9 @@ routes.post('/signin',async(req,res)=>{
     };
     const token = jwt.sign(credentials, JWT_SECRET);
     console.log(process.env.COOKIE_DOMAIN);
-    console.log(res.cookie('jwt',token, { htttpOnly: true, domain: process.env.COOKIE_DOMAIN} ));
     res.json(credentials); 
+    res.cookie('jwt',token, { htttpOnly: true, domain: process.env.COOKIE_DOMAIN} );
+    
 });
 routes.post('/user',(req, res) =>{
     res.send(getUser(req));
